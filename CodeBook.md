@@ -3,10 +3,10 @@ Submitted by: Chuck Pe Benito (student)
 Date Submitted: 2/22/2015
 
 This documentation is being prepared to put together a CODE BOOK that will describe the variables, data, and any transformations or work detail that I performed to complete the requirements of the project from the data I gathered from the dataset described below:
-#######Source :
+######Source :
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
-Version 1.0
+######Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
