@@ -38,7 +38,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ###Files used by the student (myself) to complete the project:
 
-The original dataset includes multiple files, but only the following files were utilized:
+######The original dataset includes multiple files, but only the following files were utilized:
 =========================================
 - 'README.txt': to determine the purpose of the experiment and the descriptions of the related files
 - 'features_info.txt': Shows information about the variables used on the feature vector
