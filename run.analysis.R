@@ -98,4 +98,4 @@ tidy_summary <- group_by(tidy_train_test_data, activity, subject) %>% summarise_
 
 tidy_sum <- write.table(tidy_summary,"~/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/tidy_sum.txt", row.names=FALSE)
 
-names <- data.frame(names(tidy_summary))
+names <- names(tidy_summary)
