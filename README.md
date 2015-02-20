@@ -27,7 +27,7 @@ library(dplyr)
 library(plyr)
 
 
-5.	I loaded all the files that I needed for this project and assigned them to the respective data names.
+- I loaded all the files that I needed for this project and assigned them to the respective data names.
 
 
 setwd("~/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train")
@@ -55,7 +55,7 @@ features <- read.table("~/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset
 activity_labels <- read.table("~/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt")
 
 
-6.	changed the column name of the subject and label(activity) file:
+- changed the column name of the subject and label(activity) file:
 
 
 colnames(test_subj) <- c('subject')
@@ -67,7 +67,7 @@ colnames(train_label) <- c('activity')
 colnames(test_label) <- c('activity')
 
 
-7.	rename ACTIVITY from numerics to description of activity
+- rename ACTIVITY from numerics to description of activity
 
 
 train_label$activity<- factor(train_label$activity,
@@ -81,7 +81,7 @@ levels = c(1,2,3,4,5,6),
 labels = c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
 
 
-8.	rename column names of TRAIN and TEST data sets based on the descriptions provided on the original features.txt file
+- rename column names of TRAIN and TEST data sets based on the descriptions provided on the original features.txt file
 
 
 colnames(train_set) <- features$V2
@@ -89,19 +89,19 @@ colnames(train_set) <- features$V2
 colnames(test_set) <- features$V2
 
 
-9.	combine TRAIN variables (files) together 
+- combine TRAIN variables (files) together 
 
 
 train_set_table <- bind_cols(train_subj, train_label, train_set)
 
 
-10.	combine TEST variables (files) together 
+- combine TEST variables (files) together 
 
 
 test_set_table <- bind_cols(test_subj, test_label, test_set)
 
 
-11.	convert invalid characters in the column names to valid characters by using make.names() function and then “selecting” only the desirable columns (e.g. subject, activity, “*.mean”, and “*.std”) 
+- convert invalid characters in the column names to valid characters by using make.names() function and then “selecting” only the desirable columns (e.g. subject, activity, “*.mean”, and “*.std”) 
 
 
 valid_names_test <- make.names(names=names(test_set_table), unique=TRUE, allow_ = TRUE)
@@ -117,7 +117,7 @@ names(train_set_table) <- valid_names_train
 
 train_mean_std <- select(train_set_table, subject, activity, contains("mean"), contains("std"))
 
-12.	Merging the tidied TRAIN and TEST data sets
+- Merging the tidied TRAIN and TEST data sets
 
 tidy_train_test_data <- merge(train_mean_std, test_mean_std, all=TRUE)
 
