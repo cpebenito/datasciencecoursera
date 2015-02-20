@@ -1,19 +1,17 @@
 #### datasciencecoursera: Getting and Cleaning Data
 This documentation is to present the approach I took in working on the Getting and Cleaning Data course project.
-Steps:
 
-1.	Download the data for the project by clicking on the link provided by the course website.
+####Steps:
+
+- Download the data for the project by clicking on the link provided by the course website.
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-2.	Unzip files to my working directory.
-Note: I kept the files in their respective folders and set the working directory 
+- Unzip files to my working directory.
+Note: I kept the files in their respective folders and set the working directory according to the file I wanted to read.
 
+- Load RStudio program.
 
-according to the file I wanted to read.
-
-3.	Load RStudio program.
-
-4.	Install the packages I needed for this project:
+- Install the packages I needed for this project:
 
 install.packages("tidyr")
 
