@@ -95,3 +95,7 @@ tidy_train_test_data <- merge(train_mean_std, test_mean_std, all=TRUE)
 ###### variable for each activity and each subject.
 
 tidy_summary <- group_by(tidy_train_test_data, activity, subject) %>% summarise_each(funs(mean))
+
+tidy_sum <- write.table(tidy_summary,"~/R/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/tidy_sum.txt", row.names=FALSE)
+
+names <- data.frame(names(tidy_summary))
