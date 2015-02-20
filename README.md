@@ -1,5 +1,5 @@
 #### datasciencecoursera: Getting and Cleaning Data
-This documentation is to present the approach I took in working on the Getting and Cleaning Data course project. The "CodeBook.md" contains all the descriptions of the data and variable names I used, and the transformation I did to come up with a tidy dat for the project.
+This documentation is to present the approach I took in working on the Getting and Cleaning Data course project. The "CodeBook.md" contains all the descriptions of the data and variable names I used, and the transformation I did with the raw data to come up with a tidy data for the project.
 
 ####Steps:
 
